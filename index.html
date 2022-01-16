@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Snake Game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet" /> 
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div id="pulse" class="overlay">
+
+        </div>
+        <div id="enter-name" class="overlay">
+            <div class="modal">
+                <h2>Enter your name: </h2>
+                <input id="username" type="text" autocomplete="off" />
+            </div>
+        </div>
+        <div id="game-over" class="overlay">
+            <div class="modal">
+                <h2>Game over! </h2>
+                <h3 id="end-score"></h3>
+                <button id="play-again">Try again!</button>
+            </div>
+        </div>
+        <div class="container">
+            <header>
+                <h2 id="hello"></h2>
+                <button id="disconnect-btn">Disconnect</button>
+            </header>
+            <main>
+                <h1>Snake Game</h1>
+                <h2>Score <span id="score"></span></h2>
+                <div class="grid"></div>
+            </main>
+            <footer>
+                <h2>High Scores: </h2>
+                <ol id="high-scores">
+                </ol>
+            </footer>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
