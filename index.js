@@ -220,7 +220,7 @@ function displayGame(e) {
 
 function displayScores() {
     highScoresDisplay.innerHTML = ''
-    forEach(score => {
+    highScores.forEach(score => {
         const newScore = document.createElement('li')
         newScore.textContent = `${score.username}: ${score.score}`
         highScoresDisplay.appendChild(newScore)
